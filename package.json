@@ -18,13 +18,7 @@
     "predev": "rimraf .parcel-cache dist",
     "dev": "parcel public/index.html",
     "build": "parcel build public/index.html",
-    "new-component": "new-component",
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d build"
+    "new-component": "new-component"
   },
-  "browserslist": "> 0.5%, last 2 versions, not dead",
-  "devDependencies": {
-    "gh-pages": "^6.3.0"
-  },
-  "homepage": "https://wstypr.github.io/react-wordle"
+  "browserslist": "> 0.5%, last 2 versions, not dead"
 }
