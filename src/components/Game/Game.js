@@ -13,7 +13,7 @@ import Banner from "../Banner";
 function Game() {
   const [guessList, setGuessList] = React.useState([]);
   const [answer, setAnswer] = React.useState(sample(WORDS));
-  // console.info({ answer });
+  console.info({ answer });
   const [gameStatus, setGameStatus] = React.useState("play");
 
   const handleRestart = () => {
@@ -52,7 +52,7 @@ function Game() {
         />
       )}
 
-      {gameStatus === "lose" && <Banner type="sad" answer={answer} />}
+      {gameStatus === "lose" && <Banner type="sad" answer={answer} handleRestart={handleRestart} />}
     </>
   );
 }

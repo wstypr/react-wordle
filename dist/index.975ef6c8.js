@@ -18662,7 +18662,9 @@ function Game() {
     _s();
     const [guessList, setGuessList] = (0, _reactDefault.default).useState([]);
     const [answer, setAnswer] = (0, _reactDefault.default).useState((0, _utils.sample)((0, _data.WORDS)));
-    // console.info({ answer });
+    console.info({
+        answer
+    });
     const [gameStatus, setGameStatus] = (0, _reactDefault.default).useState("play");
     const handleRestart = ()=>{
         setGuessList([]);
@@ -18710,7 +18712,8 @@ function Game() {
             }, this),
             gameStatus === "lose" && /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _bannerDefault.default), {
                 type: "sad",
-                answer: answer
+                answer: answer,
+                handleRestart: handleRestart
             }, void 0, false, {
                 fileName: "src/components/Game/Game.js",
                 lineNumber: 55,
