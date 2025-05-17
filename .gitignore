@@ -6,7 +6,6 @@ node_modules
 .pnp.js
 
 # parcel-generated files
-dist
 .parcel-cache
 
 # misc
